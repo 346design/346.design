@@ -1,0 +1,1 @@
+'use strict';var l=['/','/index.part.html','/privacy/index.part.html'];addEventListener('install',function(e){e.waitUntil(caches.open('346-design-cache-v1').then(function(c){return c.addAll(l)}))});addEventListener('fetch',function(e){var r=e.request;e.respondWith(caches.match(r.endsWith('.part.html')?r:'/').then(function(c){return c||fetch(c)}))})
