@@ -10,6 +10,11 @@
   status = 200
 
 [[redirects]]
+  from = "/assets/*"
+  to = "/404"
+  status = 404
+
+[[redirects]]
   from = "https://www.346.design/*"
   to = "https://346.design/:splat"
   status = 301
