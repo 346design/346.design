@@ -11,7 +11,7 @@
 
 [[redirects]]
   from = "/assets/*"
-  to = "/404"
+  to = "/assets/404"
   status = 404
 
 [[redirects]]
