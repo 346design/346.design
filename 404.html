@@ -10,8 +10,36 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 <meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/assets/logo/safari.svg" color="#000000">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/logo/72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="/assets/logo/96.png">
+<link rel="apple-touch-icon" sizes="128x128" href="/assets/logo/128.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/logo/144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/logo/152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/180.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/assets/logo/192.png">
+<link rel="apple-touch-icon" sizes="384x384" href="/assets/logo/384.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/assets/logo/512.png">
+<link rel="apple-touch-startup-image" href="/assets/splash/640-960.png" media="(device-width:320px)and(device-height:480px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/640-1136.png" media="(device-width:320px)and(device-height:568px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/750-1334.png" media="(device-width:375px)and(device-height:667px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/768-1024.png" media="(device-width:384px)and(device-height:512px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/1242-2208.png" media="(device-width:621px)and(device-height:1104px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/1536-2048.png" media="(min-device-width:768px)and(max-device-width:1024px)and(-webkit-min-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/1024-768.png" media="(device-width:512px)and(device-height:384px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/1334-750.png" media="(device-width:667px)and(device-height:375px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/2208-1242.png" media="(device-width:1104px)and(device-height:621px)and(-webkit-device-pixel-ratio:2)">
+<link rel="apple-touch-startup-image" href="/assets/splash/2048-1536.png" media="(min-device-width:1024px)and(max-device-width:768px)and(-webkit-min-device-pixel-ratio:2)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="346.design">
 <title>346.design</title>
-<style>:root{--shadow:0 4px 8px rgba(11,12,13,.1)}*{margin:0}body,html,main{height:100%}</style>
+<style>:root{--shadow:0 4px 8px rgba(11,12,13,.1)}*,*::before,*::after{background:transparent;border:0;box-sizing:border-box;margin:0;padding:0}body{-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}body,html,main{height:100%}ol,ul{list-style:none}</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96479724-5"></script>
 <main></main>
 <script>'use strict';navigator.serviceWorker&&navigator.serviceWorker.register('/sw.js');var g='UA-96479724-5',r='href',m=document.getElementsByTagName('main')[0],v=null;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config',g);function u(p){if(p!==undefined&&(p='/'+((p||'')+'/index.part.html').replace(/^\/*|\/*$/g,''))!==v){v=p;fetch(p).then(function(b){b.text().then(function(t){m.innerHTML=t;h();gtag('config',g,{'page_path':p})})}).catch(function(x){console.error(x)});return true}return false}function h(){Array.from(document.body.getElementsByTagName('a')).filter(function(x){return x.getAttributeNames().includes(r)}).map(function(x){var t=x.getAttribute(r);x.addEventListener('click',function(e){if(!t.includes('//')){e.preventDefault();u(t)&&history.pushState(t,'',t)}})})}h();addEventListener('popstate',function(e){u(e.state)});u(location.pathname)</script>

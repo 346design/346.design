@@ -1,4 +1,28 @@
+[[headers]]
+  for = "/*.html"
+
+  [headers.values]
+    Content-Type = "text/html;charset=utf-8"
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
   status = 200
+
+[[redirects]]
+  from = "https://www.346.design/*"
+  to = "https://346.design/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://346.design/*"
+  to = "https://346.design/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.346.design/*"
+  to = "https://346.design/:splat"
+  status = 301
+  force = true
