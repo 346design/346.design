@@ -24,7 +24,7 @@
 <main></main>
 <script>'use strict'
 !function(w,d){w&&w.register('/sw.js')
-d.addEventListener('DOMContentLoaded',function(){function y(){dataLayer.push(arguments)}function u(p){return void 0!==p&&(p='/'+((p||'')+'/index.part.html').replace(/^\/*|\/*$/g,''))!==v?(v=p,fetch(p).then(function(b){b.text().then(function(t){m.innerHTML=t,h(),y('config',g,{page_path:p})})})['catch'](function(x){console.error(x)}),!0):!1}function h(){Array.from(d.body.getElementsByTagName('a')).filter(function(x){return x.getAttributeNames().includes(r)}).map(function(x){var t=x.getAttribute(r)
+d.addEventListener('DOMContentLoaded',function(){function y(){dataLayer.push(arguments)}function u(p){return void 0!==p&&(p='/'+((p||'')+'/index.part.html').replace(/^\/*|\/*$/g,''))!==v?(v=p,fetch(p).then(function(b){b.text().then(function(t){m.innerHTML=t,h(),y('config',g,{page_path:p})})})['catch'](function(x){console.error(x)}),!0):!1}function h(){Array.prototype.filter.call(d.body.getElementsByTagName('a'),function(x){return x.getAttributeNames().includes(r)}).map(function(x){var t=x.getAttribute(r)
 x.addEventListener('click',function(e){t.includes('//')||(e.preventDefault(),u(t)&&history.pushState(t,'',t))})})}var g='UA-96479724-5',r='href',m=d.getElementsByTagName('main')[0],v=null
 window.dataLayer=window.dataLayer||[],y('js',new Date),y('config',g),h(),addEventListener('popstate',function(e){u(e.state)}),u(location.pathname)})}(navigator.serviceWorker,document)</script>
 </html>
